@@ -61,18 +61,18 @@ require("lazy").setup({
               shortcut = {
                 { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
                 {
+                  desc = ' Lang Load',
+                  group = 'Language',
+                  action = 'MasonInstall',
+                  key = 'l',
+                },
+                {
                   icon = ' ',
                   icon_hl = '@variable',
                   desc = 'Files',
                   group = 'Label',
                   action = 'Telescope find_files',
                   key = 'f',
-                },
-                {
-                  desc = ' Notes',
-                  group = 'DiagnosticHint',
-                  action = 'Neorg workspace notes',
-                  key = 'n',
                 },
                 -- {
                 --   desc = ' Apps',
@@ -81,10 +81,10 @@ require("lazy").setup({
                 --   key = 'a',
                 -- },
                 {
-                  desc = ' dotfiles',
+                  desc = ' Tree',
                   group = 'Number',
-                  action = 'Neotree C:\Users\sapra\AppData\Local\nvim',
-                  key = 'd',
+                  action = 'Neotree .',
+                  key = 't',
                 },
               },
           }
