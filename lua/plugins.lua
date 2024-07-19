@@ -53,7 +53,7 @@ require("lazy").setup({
       config = function()
         require('dashboard').setup {
           -- config
-                    theme = 'hyper',
+            theme = 'hyper',
             config = {
               week_header = {
                enable = true,
@@ -83,7 +83,7 @@ require("lazy").setup({
                 {
                   desc = ' dotfiles',
                   group = 'Number',
-                  action = 'Neotree ~/.dotfiles',
+                  action = 'Neotree C:\Users\sapra\AppData\Local\nvim',
                   key = 'd',
                 },
               },
@@ -129,7 +129,7 @@ require("lazy").setup({
       dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
     },
 
-    'xarthurx/taskwarrior.vim',
+    -- 'xarthurx/taskwarrior.vim',
     
 
     -- Git 
@@ -228,18 +228,18 @@ require("lazy").setup({
     },
     { "rafamadriz/friendly-snippets" },
     { "stevanmilic/nvim-lspimport" },
-    {
-      "kelly-lin/ranger.nvim",
-      config = function()
-        require("ranger-nvim").setup({ replace_netrw = true })
-        vim.api.nvim_set_keymap("n", "<leader>rg", "", {
-          noremap = true,
-          callback = function()
-            require("ranger-nvim").open(true)
-          end,
-        })
-      end,
-    },
+    -- {
+    --   "kelly-lin/ranger.nvim",
+    --   config = function()
+    --     require("ranger-nvim").setup({ replace_netrw = true })
+    --     vim.api.nvim_set_keymap("n", "<leader>rg", "", {
+    --       noremap = true,
+    --       callback = function()
+    --         require("ranger-nvim").open(true)
+    --       end,
+    --     })
+    --   end,
+    -- },
     -- {
     --   'VonHeikemen/fine-cmdline.nvim',
     --   requires = {

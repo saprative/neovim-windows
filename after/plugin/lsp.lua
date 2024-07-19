@@ -14,6 +14,7 @@ require("mason-lspconfig").setup {
         "eslint",
         "phpactor",
         "tsserver",
+        "intelephense",
         "vtsls",
         "eslint",
         "emmet_language_server",},
