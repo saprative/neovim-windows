@@ -61,10 +61,10 @@ require("lazy").setup({
               shortcut = {
                 { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
                 {
-                  desc = ' Lang Load',
+                  desc = '  Neovim Setup',
                   group = 'Language',
-                  action = 'MasonInstall',
-                  key = 'l',
+                  action = 'Config',
+                  key = 'n',
                 },
                 {
                   icon = ' ',
@@ -246,4 +246,23 @@ require("lazy").setup({
     --     {'MunifTanjim/nui.nvim'}
     --   }
     -- }
+    {
+      "kdheepak/lazygit.nvim",
+      cmd = {
+        "LazyGit",
+        "LazyGitConfig",
+        "LazyGitCurrentFile",
+        "LazyGitFilter",
+        "LazyGitFilterCurrentFile",
+      },
+      -- optional for floating window border decoration
+      dependencies = {
+        "nvim-lua/plenary.nvim",
+      },
+      -- setting the keybinding for LazyGit with 'keys' is recommended in
+      -- order to load the plugin when the command is run for the first time
+      keys = {
+        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+      }
+    }
 })
