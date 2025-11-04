@@ -12,3 +12,5 @@ vim.api.nvim_create_user_command(
   "Neotree ~/Appdata/Local/nvim",
   {bang = true, desc = "Open init.lua Neovim config"}
 )
+
+vim.system({ "python3", "--version" }, { text = true }, callback)
